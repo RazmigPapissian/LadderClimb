@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.papissian.razzle.ladderclimb.MainActivity">
+
+    <TextView
+        android:id="@+id/string_input"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Input number of steps"
+        android:gravity="center_vertical"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:maxLength="7"
+        android:hint="ex: 19"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_toRightOf="@+id/string_input"
+        android:layout_alignTop="@+id/string_input"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/string_input"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Calculate # of ways to climb"
+        android:layout_marginTop="40dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/calculate"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"/>
+    </ScrollView>
+
+
+</RelativeLayout>
